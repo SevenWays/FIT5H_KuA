@@ -32,5 +32,5 @@ Aktualisieren eines Prorjektes
 
 Kofiguration:
 Login und PW merken
-git config --global credential.helper Cache
+git config --global credential.helper cache
 git config credential.helper "cache --timeout=360000"
