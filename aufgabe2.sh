@@ -1,6 +1,7 @@
 #!/bin/bash
 counter=0
-
+zahl1=""
+zahl2=""
 total=0
 
 
@@ -15,17 +16,24 @@ total=0
 ##read -p "Geben Sie die erste Zahl ein:" zahl1
 
 #done
-read -p "Geben Sie die erste Zahl ein:" zahl1
 
 
 
-while [[ !$zahl2 ]] 
+
+while [[ 1 ]] 
 do
+	if[[ zahl1 = ""]]; then
+			read -p "Geben Sie die erste Zahl ein:" zahl1
+	fi
+
+
+
 	if [[ $zahl2 = 'exit' ]]; then
 		echo "Endergebnis: $total"
-		exit
-	else
-		if [[ $total -gt 0 ]]; then
+		break
+	elif [[ $zahl2 -gt 0 ]]; then
+		
+
 	echo "Bisher wurden $counter Zahlen eingegeben."
 	echo "Das Zwischenergebnis lautet: $total."
 		fi
