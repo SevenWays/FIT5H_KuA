@@ -1,0 +1,9 @@
+Programme:
+	top				#zeigt alle Prozesse des System
+
+	ps aux | gerp <name des prozesses>
+		#zeigt alle Prozesse des angemeldete Benutzers werden dem Programm gerp übergeben, das einen Filterung nach Suchmuster <name des prozesses> vornimmt. daraus kann man die ProzessID auslesen.
+
+	kill -9 ProzessID
+
+	
